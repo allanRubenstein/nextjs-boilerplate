@@ -8,7 +8,8 @@
     ],
     "allowJs": true,
     "skipLibCheck": true,
-    "strict": false,
+    // Enable strictest settings like strictNullChecks & noImplicitAny.
+    "strict": true,
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "esModuleInterop": true,
@@ -17,8 +18,6 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    // Enable strictest settings like strictNullChecks & noImplicitAny.
-    "strict": true,
   },
   "include": [
     "next-env.d.ts",
