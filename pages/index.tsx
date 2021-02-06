@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import Button from '../components/button/Button';
+import Button from '../components/link-button/LinkButton';
 
 export default function Home() {
   return (
