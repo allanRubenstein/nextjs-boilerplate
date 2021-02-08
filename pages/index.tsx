@@ -1,5 +1,5 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Head from 'next/head';
+import styles from '../styles/Home.module.css';
 import Button from '../components/link-button/LinkButton';
 
 export default function Home() {
@@ -63,5 +63,5 @@ export default function Home() {
         </a>
       </footer>
     </div>
-  )
+  );
 }
