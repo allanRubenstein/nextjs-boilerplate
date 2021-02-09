@@ -8,7 +8,7 @@ const LinkButton: React.FunctionComponent<LinkButtonProps> = (
   // if href is passed, use Link, else button
   if (props.href) {
     return (
-      // render a link
+      // render a link with an href
       <Link href={props.href} passHref>
         <LinkWrapper>{props.children}</LinkWrapper>
       </Link>
