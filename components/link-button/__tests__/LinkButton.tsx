@@ -1,7 +1,6 @@
 import React from 'react';
 import LinkButton from '../LinkButton';
 import { render } from '@testing-library/react';
-import 'jest-styled-components';
 
 test('works', () => {
   // it works :)
