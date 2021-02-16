@@ -14,7 +14,8 @@
     "check-types": "tsc",
     "lint-staged": "lint-staged",
     "test": "jest",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "test:debug": "node --inspect-brk ./node_modules/jest/bin/jest.js --runInBand --watch"
   },
   "dependencies": {
     "babel-plugin-styled-components": "^1.12.0",
