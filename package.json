@@ -13,7 +13,8 @@
     "validate": "npm-run-all --parallel check-types check-format lint test build",
     "check-types": "tsc",
     "lint-staged": "lint-staged",
-    "test": "jest"
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "dependencies": {
     "babel-plugin-styled-components": "^1.12.0",
