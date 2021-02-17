@@ -1,6 +1,7 @@
 import React from 'react';
 import LinkButton from '../LinkButton';
-import { render, screen } from '@testing-library/react';
+import { render } from '@testing-library/react';
+import { axe } from 'jest-axe';
 
 test('works', () => {
   // it works :)
@@ -19,4 +20,10 @@ test('works', () => {
       </button>
     </div>
   `);
+});
+
+test('a11y', async () => {
+  const { container } = render(<LinkButton>test</LinkButton>);
+  const results = await axe(container);
+  expect(results).toHaveNoViolations();
 });
