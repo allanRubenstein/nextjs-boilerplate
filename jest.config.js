@@ -13,4 +13,5 @@ module.exports = {
     // don't collect coverage from the .next directory
     '!**/.next/**',
   ],
+  projects: ['./test/jest.lint.ts', './jest.config.js'],
 };
