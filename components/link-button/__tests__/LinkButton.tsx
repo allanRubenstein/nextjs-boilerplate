@@ -1,6 +1,6 @@
 import React from 'react';
 import LinkButton from '../LinkButton';
-import { render } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 
 test('works', () => {
   // it works :)
@@ -19,4 +19,6 @@ test('works', () => {
       </button>
     </div>
   `);
+
+  // this is a non-breaking change to test husky and lint-staged
 });
