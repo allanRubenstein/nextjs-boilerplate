@@ -7,6 +7,7 @@ module.exports = {
   setupFilesAfterEnv: [
     '@testing-library/jest-dom/extend-expect',
     'jest-styled-components',
+    'jest-axe/extend-expect',
   ],
   collectCoverageFrom: [
     '**/components/**/*.{tsx,ts,js}',
