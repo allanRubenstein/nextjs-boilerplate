@@ -1,4 +1,5 @@
 module.exports = {
+  displayName: 'tests',
   testEnvironment: 'jest-environment-jsdom',
   moduleNameMapper: {
     '\\.css$': require.resolve('./test/style-mock.js'),
@@ -14,4 +15,5 @@ module.exports = {
     '!**/.next/**',
   ],
   projects: ['./test/jest.lint.ts', './jest.config.js'],
+  watchPlugins: ['jest-watch-select-projects'],
 };
