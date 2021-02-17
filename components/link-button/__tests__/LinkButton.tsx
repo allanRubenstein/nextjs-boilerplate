@@ -19,6 +19,4 @@ test('works', () => {
       </button>
     </div>
   `);
-
-  // this is a non-breaking change to test husky and lint-staged
 });
