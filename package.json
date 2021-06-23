@@ -17,7 +17,9 @@
     "test:coverage": "jest --coverage",
     "test:watch": "jest --watch",
     "test:debug": "node --inspect-brk ./node_modules/jest/bin/jest.js --runInBand --watch",
-    "test:coverage-open": "npm run test:coverage && open coverage/lcov-report/index.html"
+    "test:coverage-open": "npm run test:coverage && open coverage/lcov-report/index.html",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "jest-runner-eslint": {
     "cliOptions": {
@@ -39,6 +41,11 @@
     "styled-components": "^5.3.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@storybook/addon-actions": "^6.3.0",
+    "@storybook/addon-essentials": "^6.3.0",
+    "@storybook/addon-links": "^6.3.0",
+    "@storybook/react": "^6.3.0",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.0.0",
     "@testing-library/user-event": "^13.1.9",
@@ -49,6 +56,7 @@
     "@types/styled-components": "^5.1.10",
     "@typescript-eslint/eslint-plugin": "^4.28.0",
     "@typescript-eslint/parser": "^4.28.0",
+    "babel-loader": "^8.2.2",
     "canvas": "^2.8.0",
     "eslint": "^7.29.0",
     "eslint-config-prettier": "^7.2.0",
