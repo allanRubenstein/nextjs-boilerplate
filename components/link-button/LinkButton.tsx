@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 const LinkButton: React.FunctionComponent<LinkButtonProps> = (
   props: LinkButtonProps,
-) => {
+): JSX.Element => {
   // if href is passed, use Link, else button
   if (props.href) {
     return (
