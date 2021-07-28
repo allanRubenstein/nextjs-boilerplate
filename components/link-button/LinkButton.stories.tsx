@@ -15,8 +15,8 @@ const Template: Story<LinkButtonProps> = (args: LinkButtonProps) => (
 );
 
 // Template.bind({}) is a standard JavaScript technique for making a copy of a function. We use this technique to allow each exported story to set its own properties, but use the same implementation.
-export const Default: Story<LinkButtonProps> = Template.bind({});
-Default.args = {
+export const Link: Story<LinkButtonProps> = Template.bind({});
+Link.args = {
   children: 'default button',
   href: '#testHref',
 } as LinkButtonProps;
