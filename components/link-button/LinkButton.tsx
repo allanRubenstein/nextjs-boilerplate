@@ -3,22 +3,20 @@ import { LinkButtonProps } from './types';
 import Link from 'next/link';
 
 const LinkButton: React.FunctionComponent<LinkButtonProps> = (
-  props: Test,
+  props: LinkButtonProps,
 ): JSX.Element => {
   // if href is passed, use Link, else button
-  const test = true;
-  test = 12;
   if (props.href) {
     return (
       // render a link with an href
-      <Link test="woo" href={props.href} passHref>
-        <LinkWrapper test="woo">{props.children}</LinkWrapper>
+      <Link href={props.href} passHref>
+        <LinkWrapper>{props.children}</LinkWrapper>
       </Link>
     );
   } else {
     return (
       // render a button
-      <ButtonWrapper test="woo" onClick={props.onClick}>{props.children}</ButtonWrapper>
+      <ButtonWrapper onClick={props.onClick}>{props.children}</ButtonWrapper>
     );
   }
 };
