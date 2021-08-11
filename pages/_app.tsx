@@ -1,6 +1,6 @@
 // import "../styles/global.css";
 import { AppProps } from 'next/app';
-
+import 'what-input';
 import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
@@ -45,6 +45,10 @@ export const GlobalStyle = createGlobalStyle`
 
   address {
     font-style: normal;
+  }
+
+  [data-whatintent='mouse'] *:focus {
+    outline: none;
   }
 `;
 
